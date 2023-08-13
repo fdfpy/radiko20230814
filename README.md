@@ -171,8 +171,8 @@ python3 /home/pi/dcshare/be/radiko/radikoendforce.py
 
 crontabの書き方
 
-# m h  dom mon dow   command
-51 14 * * * /usr/bin/node /home/pi/dcshare/be/radiko/wrn1.js
-52 14 * * * /usr/bin/python3 /home/pi/dcshare/be/radiko/radiko.py
-22 13 * * * /usr/bin/python3 /home/pi/dcshare/be/radiko/radikoendforce.py
-55 14 * * * /home/pi/dcshare/be/radiko/kill_processes.sh
+# m h  dom mon dow   command <br>
+51 14 * * * /usr/bin/node /home/pi/dcshare/be/radiko/wrn1.js <br>
+52 14 * * * /usr/bin/python3 /home/pi/dcshare/be/radiko/radiko.py <br>
+22 13 * * * /usr/bin/python3 /home/pi/dcshare/be/radiko/radikoendforce.py <br>
+55 14 * * * /home/pi/dcshare/be/radiko/kill_processes.sh <br>
