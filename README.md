@@ -4,14 +4,14 @@
 
 /home/pi/radiko/ 以下は下記の通りにディレクトリを用意する。
 
-├── be			
-│?? ├── radiko		
-│?? └── requirements.txt		
-├── docker-compose.yml		
-├── fe		
-│?? ├── Dockerfile
-│?? ├── package.json
-│?? ├── app	
+├── be			<br>
+│?? ├── radiko	<br>	
+│?? └── requirements.txt		<br>
+├── docker-compose.yml		<br>
+├── fe		<br>
+│?? ├── Dockerfile <br>
+│?? ├── package.json<br>
+│?? ├── app	<br>
 
 ## 2 コンテナを作成する。
 
@@ -52,32 +52,32 @@ Vue CLI v5.0.8
 vue cli作成完了後、下記のディレクトリが完成している。 **追加と記載したファイルをgithubからダウンロードし書き換える
 
 .
-├── Dockerfile
-├── app
-│   ├── node_modules
-│   └── radiko
-│       ├── README.md
-│       ├── babel.config.js
-│       ├── jsconfig.json
-│       ├── node_modules
-│       ├── package-lock.json
-│       ├── package.json
-│       ├── public
-│       │   ├── favicon.ico
-│       │   └── index.html
-│       ├── src
-│       │   ├── App.vue  **追加
-│       │   ├── assets
-│       │   │   └── logo.png
-│       │   ├── components
-│       │   │   ├── HelloWorld.vue 
-│       │   │   ├── Kaden.vue **追加
-│       │   │   ├── Radiko.vue **追加
-│       │   │   └── constrdk.js **追加
-│       │   ├── main.js **追加
-│       │   └── router.js **追加
-│       └── vue.config.js
-├── package.json
+├── Dockerfile <br>
+├── app <br>
+│   ├── node_modules <br>
+│   └── radiko <br>
+│       ├── README.md <br>
+│       ├── babel.config.js <br>
+│       ├── jsconfig.json <br>
+│       ├── node_modules <br>
+│       ├── package-lock.json <br>
+│       ├── package.json <br>
+│       ├── public <br>
+│       │   ├── favicon.ico <br>
+│       │   └── index.html <br>
+│       ├── src <br>
+│       │   ├── App.vue  **追加 <br>
+│       │   ├── assets <br>
+│       │   │   └── logo.png <br>
+│       │   ├── components <br>
+│       │   │   ├── HelloWorld.vue  <br>
+│       │   │   ├── Kaden.vue **追加 <br>
+│       │   │   ├── Radiko.vue **追加 <br>
+│       │   │   └── constrdk.js **追加 <br>
+│       │   ├── main.js **追加 <br>
+│       │   └── router.js **追加 <br>
+│       └── vue.config.js <br>
+├── package.json <br>
 
 
  $ cd radiko
@@ -115,40 +115,40 @@ sudo npm install express
 
 beディレクトリ以下のファイル群をgithubより取得、配置する
 
-be
-├── Dockerfile
-├── radiko
-│   ├── __pycache__
-│   │   └── setting.cpython-39.pyc
-│   ├── const.js
-│   ├── index.js
-│   ├── kill_processes.sh
-│   ├── log.txt
-│   ├── mode.csv
-│   ├── node_modules
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── radiko copy.csv
-│   ├── radiko.csv
-│   ├── radiko.py
-│   ├── radiko.txt
-│   ├── radikoend.py
-│   ├── radikoendforce.py
-│   ├── radikosample.csv
-│   ├── sample.py
-│   ├── setting.py
-│   ├── vol50.py
-│   ├── vol50.sh
-│   ├── vol60.py
-│   ├── vol60.sh
-│   ├── vol70.py
-│   ├── vol70.sh
-│   ├── vol80.py
-│   ├── vol80.sh
-│   ├── wfmt.js
-│   ├── wrn1.js
-│   └── wrn2.js
-├── requirements.txt
+be <br>
+├── Dockerfile <br>
+├── radiko <br>
+│   ├── __pycache__ <br>
+│   │   └── setting.cpython-39.pyc <br>
+│   ├── const.js <br>
+│   ├── index.js <br>
+│   ├── kill_processes.sh <br>
+│   ├── log.txt <br>
+│   ├── mode.csv <br>
+│   ├── node_modules <br>
+│   ├── package-lock.json <br>
+│   ├── package.json <br>
+│   ├── radiko copy.csv <br>
+│   ├── radiko.csv <br>
+│   ├── radiko.py <br>
+│   ├── radiko.txt <br>
+│   ├── radikoend.py <br>
+│   ├── radikoendforce.py <br>
+│   ├── radikosample.csv <br>
+│   ├── sample.py <br>
+│   ├── setting.py <br>
+│   ├── vol50.py <br>
+│   ├── vol50.sh <br>
+│   ├── vol60.py <br>
+│   ├── vol60.sh <br>
+│   ├── vol70.py <br>
+│   ├── vol70.sh <br>
+│   ├── vol80.py <br>
+│   ├── vol80.sh <br>
+│   ├── wfmt.js <br>
+│   ├── wrn1.js <br>
+│   └── wrn2.js <br>
+├── requirements.txt <br>
 
 
 nodeサーバーを立ち上げる。
