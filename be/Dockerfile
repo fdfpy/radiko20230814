@@ -12,8 +12,6 @@ RUN apt-get install -y tzdata
 RUN apt-get install -y chromium
 RUN apt-get install -y chromium-driver
 RUN apt-get install -y xvfb
-
-
 RUN apt install -y nodejs npm
 RUN npm install python-shell
 RUN npm install express
