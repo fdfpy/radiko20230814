@@ -1,5 +1,5 @@
 //radiko LIVE放送をcron実行する前に、設定パラメータをradiko.csvに書き込むコード
-JSONFILEPATH='/home/pi/dcshare/radiko/radiko.csv'
+JSONFILEPATH='/home/pi/dcshare/be/radiko/radiko.csv'
 const fs = require('fs')
 
 //日付を分解して年と月と日付を取り出す関数

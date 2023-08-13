@@ -86,9 +86,10 @@ class RADIKOLISTEN():
         #print("#62")
 
         try:
+            time.sleep(8)
             elem_btn0 = self.browser.find_element_by_xpath(xpath0) #始めの警告BOXのボタンを探し出す
             elem_btn0.click() #ボタンをクリックする
-            time.sleep(1)
+            time.sleep(3)
             #print("#63")
             elem_btn = self.browser.find_element_by_xpath(xpath) #再生ボタンオブジェクトをサーチする
             elem_btn.click() #再生ボタンをクリックする
@@ -112,6 +113,10 @@ class RADIKOLISTEN():
             with open(setting.TXTPATH, "r+b") as f:
                 mm[:] = b"11" #スクレイピング作業エラー検出したのでState=2にする               
             self.browser.close() #ブラウザを閉じる    
+
+
+
+
 
 
      #日にちを1日加える。(例)20201224 -> 20201225
