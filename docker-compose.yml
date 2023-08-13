@@ -1,0 +1,28 @@
+version: "3"
+services:
+
+   # フロントエンド
+   fe:
+     container_name: fe
+     build: ./fe
+     volumes:
+       - ./fe/app:/app
+       - node_modules_volume:/app/node_modules
+     ports:
+       - "8080:8080"
+     command: tail -f /dev/null   #コンテナ起動状態を維持するため
+     restart: always
+
+
+  #  # バックエンド
+  #  be:
+  #    container_name: be
+  #    build: ./be
+  #    volumes:
+  #      - ./be/radiko:/app
+  #    ports:
+  #      - "5000:5000"
+  #    command: /bin/sh -c "cron &&  tail -f /dev/null" #コンテナ起動状態を維持するため
+  #    restart: always
+volumes:
+ node_modules_volume:
